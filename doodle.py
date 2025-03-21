@@ -67,7 +67,7 @@ class DoodleApp:
         # Create the interface
         self.create_widgets()
             
-        # Save initial empty state - MOVED TO AFTER create_widgets
+        # Save initial empty state
         self.save_state()
             
         # Bind keyboard shortcuts
@@ -161,7 +161,7 @@ class DoodleApp:
         
         ttk.Label(color_frame, text="COLOR PALETTE").pack(pady=(0, 10))
         
-        # Define retro colors
+        # Define colors
         self.retro_colors = [
             ("#FF5555", "Red"), ("#FF9955", "Orange"), ("#FFFF55", "Yellow"), 
             ("#55FF55", "Green"), ("#5555FF", "Blue"), ("#AA55FF", "Purple"),
@@ -497,7 +497,6 @@ class DoodleApp:
                     # For ICO, resize if needed and save
                     ico_image = self.pil_image.copy()
                     
-                    # Icon files typically use small sizes like 16x16, 32x32, 48x48
                     # Get the maximum dimension and scale it to 48px if larger
                     max_dim = max(ico_image.width, ico_image.height)
                     if max_dim > 48:
