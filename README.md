@@ -3,9 +3,9 @@ An app for drawing and saving your creations. Especially useful for making trans
 
 Download via google drive: https://drive.google.com/file/d/1TTjmDDFR4_DGU5lymPx7tmL9D2c6ZzVh/view?usp=drive_link
 
-Requirements
-Python 3.x
-Tkinter library (usually included with Python)
+Requirements:
+Python 3.x,
+Tkinter library (usually included with Python),
 Pillow (PIL) library
 
 Install the required dependencies:
